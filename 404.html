@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Страница не найдена | Ultimate Craft Coffee</title>
+<meta name="description" content="Такой страницы нет. Вернитесь в каталог свежеобжаренного кофе.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://craftcoffee.kz/404">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Ultimate Craft Coffee">
+<meta property="og:title" content="Страница не найдена | Ultimate Craft Coffee">
+<meta property="og:description" content="Такой страницы нет. Вернитесь в каталог свежеобжаренного кофе.">
+<meta property="og:url" content="https://craftcoffee.kz/404">
+<meta property="og:image" content="https://craftcoffee.kz/img/og.jpg">
+<link rel="icon" type="image/png" href="img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&amp;display=swap">
+<link rel="stylesheet" href="css/style.css">
+<!-- АНАЛИТИКА: сюда вставить коды Google Analytics 4 и Яндекс Метрики -->
+</head>
+<body>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="index.html">
+<img src="img/logo.png" alt="Ultimate Craft Coffee" width="187" height="90">
+<span class="brand-text"><strong>Обжариваем кофе в Алматы</strong><span>Est. 2017</span></span>
+</a>
+<nav class="nav" aria-label="Основное меню">
+<a href="index.html#catalog">Кофе</a>
+<a href="opt/index.html">Для бизнеса</a>
+<a href="index.html#delivery">Доставка</a>
+<a href="index.html#about">О нас</a>
+</nav>
+<button class="cart-btn" type="button" data-cart-open aria-label="Корзина"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span class="badge" data-cart-count hidden>0</span></button>
+</div>
+</header>
+<main class="wrap" style="padding:80px 24px;text-align:center;display:flex;flex-direction:column;gap:18px;align-items:center">
+<h1 class="h2">Такой страницы нет</h1>
+<p class="muted">Зато есть свежий кофе.</p>
+<a class="btn" href="index.html#catalog">В каталог</a>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<img src="img/logo.png" alt="Ultimate Craft Coffee" width="91" height="44" loading="lazy">
+<div class="footer-links">
+<a href="https://wa.me/77717711161">WhatsApp +7 771 771 1161</a>
+<a href="https://t.me/ultimatecraftcoffee">Telegram</a>
+<!-- Instagram: добавить ссылку, когда будет готов аккаунт -->
+<a href="mailto:ultcraftcoffee@gmail.com">ultcraftcoffee@gmail.com</a>
+</div>
+</div>
+</footer>
+<div class="drawer" id="cart" hidden>
+<div class="drawer-bg" data-cart-close></div>
+<aside class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+<div class="drawer-head"><h2 class="h2" id="cart-title">Корзина</h2><button class="drawer-close" type="button" data-cart-close aria-label="Закрыть">×</button></div>
+<div id="cart-done" hidden><p class="step-t" id="cart-done-title">Заказ принят</p><p class="muted" style="margin-top:8px">Мы свяжемся с вами по телефону, чтобы подтвердить заказ и время доставки.</p><button class="btn btn-ghost" type="button" style="margin-top:16px" data-cart-close>Хорошо</button></div>
+<div id="cart-empty"><p class="muted">Пока пусто. Выберите кофе в каталоге.</p><a class="btn" style="margin-top:16px" href="index.html#catalog" data-cart-close>В каталог</a></div>
+<div id="cart-full" hidden>
+<ul class="ci-list" id="cart-list"></ul>
+<div class="cart-sum"><span>Итого</span><b id="cart-total">0 тг</b></div>
+<p class="small" id="cart-delivery"></p>
+<form class="cart-form" id="cart-form" novalidate>
+<label class="field"><span>Имя</span><input id="f-name" name="name" required autocomplete="name"></label>
+<label class="field"><span>Телефон</span><input id="f-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+7"></label>
+<label class="field"><span>Адрес доставки</span><input id="f-address" name="address" required autocomplete="street-address" placeholder="Улица, дом, квартира"></label>
+<label class="field"><span>Комментарий</span><textarea id="f-comment" name="comment" rows="2" placeholder="Удобное время, подъезд, срочная доставка"></textarea></label>
+<label class="hp" aria-hidden="true">Сайт<input name="website" tabindex="-1" autocomplete="off"></label>
+<button class="btn" type="submit" id="cart-submit">Оформить заказ</button>
+<p class="small" id="cart-note" role="status"></p>
+<p class="small">Обжарим в день заказа, привезём на следующий день. Оплата при получении. Вопросы — <a href="https://wa.me/77717711161">в WhatsApp</a>.</p>
+<button class="linkbtn" type="button" id="cart-clear">Очистить корзину</button>
+</form>
+</div>
+</aside>
+</div>
+<script src="js/cart.js"></script>
+</body>
+</html>
